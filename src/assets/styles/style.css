@@ -192,17 +192,24 @@ margin-left: 292px;
 margin-right: 342px;
 margin-top: 22px;
  }
- .question{ 
-  width: 460px;
-height: 68px;
+ .kestion{ 
+  color: #908F8F;
 flex-shrink: 0;
 border-radius: 10px 0px 0px 0px;
 background: rgba(187, 187, 187, 0.18);
 display: flex;
 margin-top: 16px;
-margin-left: 156px;
-margin-right: 9px;
+text-align: center;
+padding: 10px 25px 8px 25px  ;
+margin: 0px 50px 15px 20px;
+/* margin-right: 9px;
+margin-left: 606px; */
   }
+  .kestion{ 
+    align-items: center;
+  }
+
+
 
 
 
