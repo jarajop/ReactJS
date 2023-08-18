@@ -139,9 +139,9 @@ function Accueil() {
       </div>
 
       {/* <hr className="horizontal" /> */}
-
-      <div className="container ">
-        <hr className="horizontal" />
+      <hr className="horizontal" />
+      
+     <div className="container ">
 
         <div className="row  ">
           <div className="col-4">
