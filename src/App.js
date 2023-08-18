@@ -10,6 +10,7 @@ import Accueil from './componants/Accueil';
 import { BrowserRouter,Routes,Route} from 'react-router-dom';
 import Connexion from './componants/Connexion';
 import Login from './componants/Login';
+import Footer from './componants/Footer';
 
 
 function App() {
@@ -32,11 +33,9 @@ function App() {
        <Route path='/confiance' element={ <Confiance />}/>
        <Route path='/connexion' element={ <Connexion />}/>
        <Route path='/login' element={ <Login />}/>
+       <Route path='/footer' element={ <Footer/>}/>
 
-
-
-
-
+       
        </Routes>
        
        </BrowserRouter>

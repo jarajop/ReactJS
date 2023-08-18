@@ -169,6 +169,13 @@ box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
   margin-left: 840px;
   
 }
+
+
+.trait2 {
+  width: 1799px;
+  height: 999px;
+  color: #11355F;
+}
 .text{
   color: #908F8F;
 text-align: center;
@@ -208,8 +215,70 @@ margin-left: 606px; */
   .kestion{ 
     align-items: center;
   }
+/* 
+.footer{  width: 1512px;
+height: 326px;
+flex-shrink: 0;
+} */
+
+.vertical{ 
+   border-left: 2px solid ;
+display: inline-block;
+height: 130px;
+/* margin: 0 9px 8px -1500px; */
+margin: -50px 530px 0px -15px;
+color: #11355F; }
 
 
+.horizontal{
+  border-top:4px solid var(--primary);
+  height: 130px;
+  margin: 132px -280px 8px -1500px;
+  }
+
+
+.horizontal2{
+  border-top:33px solid var(--primary);
+  height: 130px;
+  margin: 132px -280px 8px -1500px;
+  }
+  .aide {
+    color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;  
+  /* margin: 10px; */
+   }
+
+  .aide2 {
+    color: #000;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+  
+  .alignement2{
+    margin-top: -153px;
+    }
+
+    .renseigner{border-radius: 5px;
+border: 1px solid #11355F;
+background: rgba(217, 217, 217, 0.40);    }
+
+.boutton3{border-radius: 0px 5px 5px 0px;
+border: 1px solid #11355F;
+background: #11355F;     }
+
+.copyright {
+  margin-top: -135px;
+ }
+
+
+  
 
 
 

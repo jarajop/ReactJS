@@ -21,10 +21,12 @@ function Navbar () {
                <NavLink className="mem" to="/confiance"> Ils nous font confiance</NavLink>
                </li>
                <li >
-               <NavLink className="mem" to="/voitures"> Nos Voitures</NavLink>
+               <NavLink className="mem" to="/voitures"> Nos Voitures </NavLink>
                </li>
                <li >
                <NavLink type="button" to="/connexion" className="boutton">Connexion </NavLink> </li>
+               
+
            </ul>
        </nav>
     </div>   )
