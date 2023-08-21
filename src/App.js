@@ -13,6 +13,8 @@ import Login from './componants/Login';
 import Footer from './componants/Footer';
 import Etat from './componants/Etat';
 import Etat2 from './componants/Etat2';
+import Etat3 from './componants/Etat3';
+import EtatForm from './componants/EtatForm';
 
 
 function App() {
@@ -33,7 +35,7 @@ function App() {
        <Route path='/services' element={ <Services/>}/>
        <Route path='/voitures' element={ <Voitures />}/>
        <Route path='/confiance' element={ <Confiance />}/>
-       <Route path='/connexion' element={ <Etat2 />}/>  {/* ici c la page connexion ki doit etre la */}
+       <Route path='/connexion' element={ <EtatForm />}/>  {/* ici c la page connexion ki doit etre la  mai je fais ds tests avc les etats c pourkw*/}
        <Route path='/login' element={ <Login />}/>
        <Route path='/footer' element={ <Footer/>}/>
 
