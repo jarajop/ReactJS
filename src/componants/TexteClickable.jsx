@@ -7,7 +7,7 @@ function TexteClickable() {
   const [isOpen, setIsOpen] = useState(false);// ici on la initialisé á ce quil soit fermé par defaut 
 
   const toggleOpen = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(!isOpen); // la il permutte just letat de laffichage en fonction du click 
   };
 
   return (
@@ -25,8 +25,8 @@ function TexteClickable() {
           onClick={toggleOpen}
         />
       </div>
-      {isOpen && (
-        <div className="content kestion d-flex justify-content-between align-items-center">
+      {isOpen && ( 
+      <div className="content kestion d-flex justify-content-between align-items-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ab sed
           iste vero error odio, repellat aperiam officia saepe corrupti
           veritatis, aliquid delectus doloribus quam! Quia ratione ex amet
