@@ -47,17 +47,13 @@ function Accueil() {
       </div>
       <div className="container mt-5 mb-5">
         <div className="row  ">
-          <div className="col-6">
-            <div className="kestion d-flex justify-content-between align-items-center">
-              <p className="p-0 m-0"> Question question?</p>
-              <Icon
-                icon="ph:plus-light"
-                color="#908f8f"
-                width="32"
-                height="32"
-              />
-            </div>{" "}
-          </div>
+        <div className="col-6">
+  <NavLink to="#"  type="button" className="kestion d-flex justify-content-between align-items-center">
+    <p className="p-0 m-0"> Question question?</p>
+    <Icon icon="ph:plus-light" color="#908f8f" width="32" height="32" />
+  </NavLink>
+</div>
+
           <div className="col-6">
             <div className="kestion d-flex justify-content-between align-items-center">
               <p className="p-0 m-0"> Question question?</p>
