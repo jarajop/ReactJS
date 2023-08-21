@@ -215,11 +215,16 @@ margin-left: 606px; */
   .kestion{ 
     align-items: center;
   }
-/* 
-.footer{  width: 1512px;
-height: 326px;
-flex-shrink: 0;
-} */
+
+
+.footer{  
+  background: var(--primary);
+  width: 100%;
+  padding: 1px 0px;
+  margin-top: 56px;
+  color: #FFF;
+
+} 
 
 .vertical{ 
    border-left: 2px solid ;
@@ -233,15 +238,11 @@ color: #11355F; }
 .horizontal{
   border-top:4px solid var(--primary);
   height: 130px;
-  margin: 132px -280px 8px -1500px;
+  margin-top: 50px;
   }
 
 
-.horizontal2{
-  border-top:33px solid var(--primary);
-  height: 130px;
-  margin: 132px -280px 8px -1500px;
-  }
+
   .aide {
     color: #000;
   font-family: Inter;
@@ -273,8 +274,8 @@ background: rgba(217, 217, 217, 0.40);    }
 border: 1px solid #11355F;
 background: #11355F;     }
 
-.copyright {
-  margin-top: -13px;
+.content_footer {
+  margin-top: 93px;
  }
 
 

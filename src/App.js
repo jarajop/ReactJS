@@ -11,6 +11,8 @@ import { BrowserRouter,Routes,Route} from 'react-router-dom';
 import Connexion from './componants/Connexion';
 import Login from './componants/Login';
 import Footer from './componants/Footer';
+import Etat from './componants/Etat';
+import Etat2 from './componants/Etat2';
 
 
 function App() {
@@ -31,7 +33,7 @@ function App() {
        <Route path='/services' element={ <Services/>}/>
        <Route path='/voitures' element={ <Voitures />}/>
        <Route path='/confiance' element={ <Confiance />}/>
-       <Route path='/connexion' element={ <Connexion />}/>
+       <Route path='/connexion' element={ <Etat2 />}/>  {/* ici c la page connexion ki doit etre la */}
        <Route path='/login' element={ <Login />}/>
        <Route path='/footer' element={ <Footer/>}/>
 

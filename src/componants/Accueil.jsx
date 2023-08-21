@@ -139,118 +139,128 @@ function Accueil() {
       </div>
 
       {/* <hr className="horizontal" /> */}
-      <hr className="horizontal" />
-      
-     <div className="container ">
+      <div className="content_footer">
+        <hr className="horizontal" />
 
-        <div className="row  ">
-          <div className="col-4">
-            <hr className="vertical" />
-            <div className="alignement2">
-              <p className="text-start aide"> Besoin d'aide ?</p>
-              <p className="text-start aide2">
-                {" "}
-                Contactez-nous par téléphone ou par mail <br />{" "}
-              </p>
+        <div className="container ">
+          <div className="row  ">
+            <div className="col-4">
+              <hr className="vertical" />
+              <div className="alignement2">
+                <p className="text-start aide"> Besoin d'aide ?</p>
+                <p className="text-start aide2">
+                  {" "}
+                  Contactez-nous par téléphone ou par mail <br />{" "}
+                </p>
 
-              <p className="text-start aide2">
-                <Icon
-                  icon="dashicons:phone"
-                  color="#11355f"
-                  width="20"
-                  height="20"
-                  rotate={1}
-                />{" "}
-                +221 78 136 36 35
-                <Icon
-                  icon="entypo:old-phone"
-                  color="#11355f"
-                  width="20"
-                  height="20"
-                />{" "}
-                +221 33 825 23 26
-              </p>
+                <p className="text-start aide2">
+                  <Icon
+                    icon="dashicons:phone"
+                    color="#11355f"
+                    width="20"
+                    height="20"
+                    rotate={1}
+                  />{" "}
+                  +221 78 136 36 35
+                  <Icon
+                    icon="entypo:old-phone"
+                    color="#11355f"
+                    width="20"
+                    height="20"
+                  />{" "}
+                  +221 33 825 23 26
+                </p>
 
-              <p className="text-start aide2">
-                <Icon
-                  icon="fluent:mail-28-filled"
-                  color="#11355f"
-                  width="28"
-                  height="28"
-                />{" "}
-                Contact@subitotaxi.net
-              </p>
+                <p className="text-start aide2">
+                  <Icon
+                    icon="fluent:mail-28-filled"
+                    color="#11355f"
+                    width="28"
+                    height="28"
+                  />{" "}
+                  Contact@subitotaxi.net
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="col-4">
-            <hr className="vertical" />
-            <div className="alignement2">
-              <p className="text-start aide"> Suivez - nous</p>
-              <p className="text-start aide justify-content-space-between">
-                <Icon
-                  icon="mingcute:facebook-line"
-                  color="#11355f"
-                  width="24"
-                  height="24"
-                />
-                <Icon
-                  icon="jam:linkedin-circle"
-                  color="#11355f"
-                  width="24"
-                  height="24"
-                />
-                <Icon
-                  icon="ant-design:instagram-outlined"
-                  color="#11355f"
-                  width="24"
-                  height="24"
-                />
-                <Icon
-                  icon="jam:youtube-circle"
-                  color="#11355f"
-                  width="24"
-                  height="24"
-                />{" "}
-              </p>
-              <p className="text-start aide">Newsletter </p>
-              <div className="d-flex ">
-                <input
-                  className="renseigner "
-                  placeholder="Votre adresse email"
-                  type="email"
-                  id="email"
-                  required
-                />
-                <button className="boutton3" type="submit" id="submit">
-                  S'inscrire
-                </button>
+            <div className="col-4">
+              <hr className="vertical" />
+              <div className="alignement2">
+                <p className="text-start aide"> Suivez - nous</p>
+                <p className="text-start aide justify-content-space-between">
+                  <a href="https://www.facebook.com/subitotaxi">
+                    {" "}
+                    <Icon
+                      icon="mingcute:facebook-line"
+                      color="#11355f"
+                      width="24"
+                      height="24"
+                    />
+                  </a>
+                  <a href="https://www.linkedin.com/company/subito-senegal">
+                    <Icon
+                      icon="jam:linkedin-circle"
+                      color="#11355f"
+                      width="24"
+                      height="24"
+                    />
+                  </a>
+                  <Icon
+                    icon="ant-design:instagram-outlined"
+                    color="#11355f"
+                    width="24"
+                    height="24"
+                  /> 
+
+                  <a href="https://instagram.com/taxi_subito">
+                    <Icon
+                    icon="jam:youtube-circle"
+                    color="#11355f"
+                    width="24"
+                    height="24"
+                  />{" "}</a>
+                </p>
+                <p className="text-start aide">Newsletter </p>
+                <div className="d-flex ">
+                  <input
+                    className="renseigner "
+                    placeholder="Votre adresse email"
+                    type="email"
+                    id="email"
+                    required
+                  />
+                  <button className="boutton3" type="submit" id="submit">
+                    S'inscrire
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-4">
+              <hr className="vertical" />
+              <div className="alignement2">
+                {" "}
+                <br />
+                <p className="text-start aide">FAQ </p>
+                <p className="text-start aide">Accueil </p>
+                <p className="text-start aide">Termes d’utilisateur </p>
               </div>
             </div>
           </div>
-
-          <div className="col-4">
-            <hr className="vertical" />
-            <div className="alignement2">
-              {" "}
-              <br />
-              <p className="text-start aide">FAQ </p>
-              <p className="text-start aide">Accueil </p>
-              <p className="text-start aide">Termes d’utilisateur </p>
-            </div>
-          </div>
+        </div>
+        <div className="footer">
+          <p className="copyright pt-2">
+            Copyright{" "}
+            <Icon
+              icon="emojione-monotone:copyright"
+              color="white"
+              width="26"
+              height="26"
+            />{" "}
+            2022 MySubito.net Tous droits réservés
+          </p>
         </div>
       </div>
-      <hr className="d-flex horizontal2" />
-      <p className="copyright">
-        Copyright{" "}
-        <Icon
-          icon="emojione-monotone:copyright"
-          color="white"
-          width="26"
-          height="26"
-        />
-      </p>
     </div>
   );
 }
