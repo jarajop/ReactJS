@@ -204,7 +204,6 @@ margin-top: 22px;
 flex-shrink: 0;
 border-radius: 10px 0px 0px 0px;
 background: rgba(187, 187, 187, 0.18);
-display: flex;
 margin-top: 16px;
 text-align: center;
 padding: 10px 25px 8px 25px  ;
@@ -212,10 +211,7 @@ margin: 0px 50px 15px 20px;
 /* margin-right: 9px;
 margin-left: 606px; */
   }
-  .kestion{ 
-    align-items: center;
-  }
-
+  
 
 .footer{  
   background: var(--primary);
