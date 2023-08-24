@@ -17,6 +17,7 @@ import Etat3 from './componants/Etat3';
 import EtatForm from './componants/EtatForm';
 import TexteClickable from './componants/TexteClickable';
 import Etat4 from './componants/Etat4';
+import Form from './componants/Form';
 
 
 function App() {
@@ -37,9 +38,10 @@ function App() {
        <Route path='/services' element={ <Services/>}/>
        <Route path='/voitures' element={ <Voitures />}/>
        <Route path='/confiance' element={ <Confiance />}/>
-       <Route path='/connexion' element={ <TexteClickable/>}/>  {/* ici c la page connexion ki doit etre la  mai je fais ds tests avc les etats c pourkw*/}
+       <Route path='/connexion' element={ <EtatForm/>}/>  {/* ici c la page connexion ki doit etre la  mai je fais ds tests avc les etats c pourkw*/}
        <Route path='/login' element={ <Login />}/>
        <Route path='/footer' element={ <Footer/>}/>
+       <Route path='/form' element={ <Form/>}/>
 
        
        </Routes>

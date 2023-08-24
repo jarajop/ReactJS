@@ -24,7 +24,7 @@ function EtatForm() {
         <form onSubmit={handleSubmit}>  
       <input
         type="text"
-        name="firstName" // il recupere le elemenst saisies au niveau de la console
+        name="firstName" // il recupere le elements saisies au niveau de la console
         
         value={formData.firstName}
         onChange={handleInputChange}
@@ -41,8 +41,7 @@ function EtatForm() {
         value={formData.email}
         onChange={handleInputChange}
       />
-      <button type="submit">Soumettre</button>
-    </form>
+/    </form>
   );
 }
 
