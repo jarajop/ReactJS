@@ -2,8 +2,57 @@ import { NavLink } from "react-router-dom";
 import Img9 from "../assets/images/home/banner_faq.png";
 import "../assets/styles/style.css";
 import { Icon } from "@iconify/react";
+import { useState } from "react";
 
 function Accueil() {
+  const Kaba = [
+    {
+      question: "question1",
+      reponse:
+        "1Lorem ipsum dolor sit amet consectetur. Varius vitae aliquam porttitor mauris.din. Ullamcorper vel hendrerit enim massa duis.Donec tincidunt mauris facilisis eu tellus justo nibh. Pretium at elementum estas arcu. Et laoreet neque laoreel hendrerit enim",
+    },
+    {
+      question: "question2",
+      reponse:
+        "2Lorem ipsum dolor sit amet consectetur. Varius vitae aliquam porttitor mauris.din. Ullamcorper vel hendrerit enim massa duis.Donec tincidunt mauris facilisis eu tellus justo nibh. Pretium at elementum estas arcu. Et laoreet neque laoreel hendrerit enim",
+    },
+    {
+      question: "question3",
+      reponse:
+        "3Lorem ipsum dolor sit amet consectetur. Varius vitae aliquam porttitor mauris.din. Ullamcorper vel hendrerit enim massa duis.Donec tincidunt mauris facilisis eu tellus justo nibh. Pretium at elementum estas arcu. Et laoreet neque laoreel hendrerit enim",
+    },
+    {
+      question: "question4",
+      reponse:
+        "Lorem ipsum dolor sit amet consectetur. Varius vitae aliquam porttitor mauris.din. Ullamcorper vel hendrerit enim massa duis.Donec tincidunt mauris facilisis eu tellus justo nibh. Pretium at elementum estas arcu. Et laoreet neque laoreel hendrerit enim",
+    },
+    {
+      question: "question5",
+      reponse:
+        "Lorem ipsum dolor sit amet consectetur. Varius vitae aliquam porttitor mauris.din. Ullamcorper vel hendrerit enim massa duis.Donec tincidunt mauris facilisis eu tellus justo nibh. Pretium at elementum estas arcu. Et laoreet neque laoreel hendrerit enim",
+    },
+    {
+      question: "question6",
+      reponse:
+        "Lorem ipsum dolor sit amet consectetur. Varius vitae aliquam porttitor mauris.din. Ullamcorper vel hendrerit enim massa duis.Donec tincidunt mauris facilisis eu tellus justo nibh. Pretium at elementum estas arcu. Et laoreet neque laoreel hendrerit enim",
+    },
+    {
+      question: "question7",
+      reponse:
+        "Lorem ipsum dolor sit amet consectetur. Varius vitae aliquam porttitor mauris.din. Ullamcorper vel hendrerit enim massa duis.Donec tincidunt mauris facilisis eu tellus justo nibh. Pretium at elementum estas arcu. Et laoreet neque laoreel hendrerit enim",
+    },
+    {
+      question: "question8",
+      reponse:
+        "Lorem ipsum dolor sit amet consectetur. Varius vitae aliquam porttitor mauris.din. Ullamcorper vel hendrerit enim massa duis.Donec tincidunt mauris facilisis eu tellus justo nibh. Pretium at elementum estas arcu. Et laoreet neque laoreel hendrerit enim",
+    },
+  ];
+  const [isOpen, setIsOpen] = useState(false); // ici on la initialisé á ce quil soit fermé par defaut
+
+  const toggleOpen = () => {
+    setIsOpen(!isOpen); // la il permutte just letat de laffichage en fonction du click
+  };
+
   return (
     <div>
       <div id="home">
@@ -47,94 +96,27 @@ function Accueil() {
       </div>
       <div className="container mt-5 mb-5">
         <div className="row  ">
-          <div className="col-6">
-            <div className="kestion d-flex justify-content-between align-items-center">
-              <p className="p-0 m-0"> Question question?</p>
-              <Icon
-                icon="ph:plus-light"
-                color="#908f8f"
-                width="32"
-                height="32"
-              />
-            </div>{" "}
-          </div>
-          <div className="col-6">
-            <div className="kestion d-flex justify-content-between align-items-center">
-              <p className="p-0 m-0"> Question question?</p>
-              <Icon
-                icon="ph:plus-light"
-                color="#908f8f"
-                width="32"
-                height="32"
-              />
-            </div>{" "}
-          </div>
-          <div className="col-6">
-            <div className="kestion d-flex justify-content-between align-items-center">
-              <p className="p-0 m-0"> Question question?</p>
-              <Icon
-                icon="ph:plus-light"
-                color="#908f8f"
-                width="32"
-                height="32"
-              />
-            </div>{" "}
-          </div>
-          <div className="col-6">
-            <div className="kestion d-flex justify-content-between align-items-center">
-              <p className="p-0 m-0"> Question question?</p>
-              <Icon
-                icon="ph:plus-light"
-                color="#908f8f"
-                width="32"
-                height="32"
-              />
-            </div>{" "}
-          </div>
-          <div className="col-6">
-            <div className="kestion d-flex justify-content-between align-items-center">
-              <p className="p-0 m-0"> Question question?</p>
-              <Icon
-                icon="ph:plus-light"
-                color="#908f8f"
-                width="32"
-                height="32"
-              />
-            </div>{" "}
-          </div>
-          <div className="col-6">
-            <div className="kestion d-flex justify-content-between align-items-center">
-              <p className="p-0 m-0"> Question question?</p>
-              <Icon
-                icon="ph:plus-light"
-                color="#908f8f"
-                width="32"
-                height="32"
-              />
-            </div>{" "}
-          </div>
-          <div className="col-6">
-            <div className="kestion d-flex justify-content-between align-items-center">
-              <p className="p-0 m-0"> Question question?</p>
-              <Icon
-                icon="ph:plus-light"
-                color="#908f8f"
-                width="32"
-                height="32"
-              />
-            </div>{" "}
-          </div>
-          <div className="col-6">
-            <div className="kestion d-flex justify-content-between align-items-center">
-              <p className="p-0 m-0"> Question question?</p>
-              <Icon
-                icon="ph:plus-light"
-                color="#908f8f"
-                width="32"
-                height="32"
-              />
-            </div>{" "}
-          </div>
+          {Kaba.map((question,index) => (
+            <div className="col-6 "onClick={()=>setIsOpen(!isOpen) }>
+              <div className="kestion ">
+                <div className="d-flex justify-content-between align-items-center w-100">
+                  <p className="p-0 m-0" >
+                    {question.question}  {/* les kestion sont dynamiques ici */}
+                  </p>
+                  <Icon
+                    icon="ph:plus-light"
+                    color="#908f8f"
+                    width="32"
+                    height="32"
+                  />
+                </div>
+                {isOpen && (
+                  <p>
+                                        {question.reponse}   </p>
+                )}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -210,15 +192,16 @@ function Accueil() {
                     color="#11355f"
                     width="24"
                     height="24"
-                  /> 
+                  />
 
                   <a href="https://instagram.com/taxi_subito">
                     <Icon
-                    icon="jam:youtube-circle"
-                    color="#11355f"
-                    width="24"
-                    height="24"
-                  />{" "}</a>
+                      icon="jam:youtube-circle"
+                      color="#11355f"
+                      width="24"
+                      height="24"
+                    />{" "}
+                  </a>
                 </p>
                 <p className="text-start aide">Newsletter </p>
                 <div className="d-flex ">
