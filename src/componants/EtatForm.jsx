@@ -39,7 +39,8 @@ function EtatForm() {
         type="email"
         name="email"
         value={formData.email}
-        onChange={handleInputChange}
+        onChange={handleInputChange} 
+      
       />
 /    </form>
   );

@@ -26,7 +26,7 @@ function App() {
       
        {/* 
       
-       <Jeu_image/> */}
+       <Jeu_image/> */}  
         
        <BrowserRouter> 
        <Navbar/>
