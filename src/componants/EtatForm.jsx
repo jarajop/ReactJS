@@ -15,17 +15,17 @@ function EtatForm() {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (event) => {  // cette (f) enregistre ls infos saisies au niveau de la console
+  const handleSubmit = (event) => {
+    // cette (f) enregistre ls infos saisies au niveau de la console
     event.preventDefault();
     console.log(formData);
   };
 
   return (
-        <form onSubmit={handleSubmit}>  
+    <form onSubmit={handleSubmit}>
       <input
         type="text"
         name="firstName" // il recupere le elements saisies au niveau de la console
-        
         value={formData.firstName}
         onChange={handleInputChange}
       />
@@ -39,10 +39,10 @@ function EtatForm() {
         type="email"
         name="email"
         value={formData.email}
-        onChange={handleInputChange} 
-      
+        onChange={handleInputChange}
       />
-/    </form>
+      /{" "}
+    </form>
   );
 }
 

@@ -1,18 +1,23 @@
-import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function Etat4() {
-  const [isOn, setIsOn] = useState(false);// donc la on utilise usestate pr gerer la valeur booleen de IsOn.Sn etat initial est fixé a false
+  const [isOn, setIsOn] = useState(false); // donc la on utilise usestate pr gerer la valeur booleen de IsOn.Sn etat initial est fixé a false
 
-  const toggleSwitch = () => { // nous avons cette fonction ki permettra de faire basculer la val de IsOn chak fois k le bouton est cliqué
+  const toggleSwitch = () => {
+    // nous avons cette fonction ki permettra de faire basculer la val de IsOn chak fois k le bouton est cliqué
     setIsOn(!isOn); // ! ceci est loperateur de negation logik ki permet de basculer de vrai vers faux et vice versa
-  };// setIsOn est une fonction fournie par un hook (ici usestate j crois)
-// Un peu plus haut IsOn est initialisé á false pr ainsi dire k letat au tt debut sera eteint (on pouvait aussi le faire á allumé par defaut)
+  }; // setIsOn est une fonction fournie par un hook (ici usestate j crois)
+  // Un peu plus haut IsOn est initialisé á false pr ainsi dire k letat au tt debut sera eteint (on pouvait aussi le faire á allumé par defaut)
   return (
     <div>
-      <p>L'interrupteur est {isOn ? 'on' : 'off'}</p>
+      <p>L'interrupteur est {isOn ? "on" : "off"}</p>
       <button onClick={toggleSwitch}>Basculer=toogle</button>
     </div>
   );
 }
-export default Etat4 ;
+export default Etat4;
+//isOn : C'est la variable booléenne dont nous vérifions la valeur. Si isOn est vrai 
+      //(c'est-à-dire évalué à true), alors le résultat de l'expression conditionnelle sera la chaîne de caractères 'on'. Sinon, si isOn est faux
+       //(c'est-à-dire évalué à false), le résultat sera la chaîne 'off'.iughi */
+

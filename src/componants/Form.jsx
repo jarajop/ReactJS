@@ -8,7 +8,13 @@ function Form() {
     prenom: "",
     age: "",
     civilite: "",
-  }); // ici a début kom rien est encore saisi le usestate est initialié á vide avc ls doubles quotes
+  });
+  // console.log(Pers.nom)
+  // ici a début kom rien est encore saisi le usestate est initialié á vide avc ls doubles quotes
+  //Chak champ est lié à l'état correspondant à l'aide de la propriété value et est mis à jour à chaque changement à l'aide de la fonction setPers.
+
+  // Lorsk le user saisit des données dans les champs, les fonctions onChange sont déclenchées, et elles mettent à jour l'état du formulaire
+  // en utilisant la fonction setPers et en répandant les valeurs existantes avec les nouvelles valeurs modifiées.
   return (
     <div className=" aide d-flex ">
       <form>
@@ -16,7 +22,7 @@ function Form() {
         <input
           placeholder="Nom"
           type="text"
-          value={Pers.nom}
+         value={Pers.nom} 
           name="nom"
           onChange={(e) => setPers({ ...Pers, nom: e.target.value })} // e.target.value renvoyer la valeur actuelle du champ de saisie donc setName.  e.target.value
         />
@@ -27,7 +33,7 @@ function Form() {
           name="prenom"
           placeholder="Prénom"
           value={Pers.prenom}
-          onChange={(e) => setPers({ ...Pers, prenom: e.target.value })}
+          onChange={(e) => setPers({ ...Pers, prenom: e.target.value })} 
         />
         <br />
         <label> Age </label>{" "}
@@ -52,6 +58,13 @@ function Form() {
           Soumettre
         </button>
       </form>
+
+      <div className=" form2 d-flex justify-content-end">
+        <div className="p-2">{Pers.nom}</div>
+        <div className="p-2"> {Pers.prenom}</div>
+        <div className="p-2"> {Pers.age}</div>
+        <div className="p-2"> {Pers.civilite}</div>
+      </div>
     </div>
   );
 }

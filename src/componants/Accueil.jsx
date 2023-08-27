@@ -96,12 +96,12 @@ function Accueil() {
       </div>
       <div className="container mt-5 mb-5">
         <div className="row  ">
-          {Kaba.map((question,index) => (
-            <div className="col-6 "onClick={()=>setIsOpen(!isOpen) }>
+          {Kaba.map((question, index) => (
+            <div className="col-6 " onClick={() => setIsOpen(!isOpen)}>
               <div className="kestion ">
                 <div className="d-flex justify-content-between align-items-center w-100">
-                  <p className="p-0 m-0" >
-                    {question.question}  {/* les kestion sont dynamiques ici */}
+                  <p className="p-0 m-0">
+                    {question.question} {/* les kestion sont dynamiques ici */}
                   </p>
                   <Icon
                     icon="ph:plus-light"
@@ -110,10 +110,7 @@ function Accueil() {
                     height="32"
                   />
                 </div>
-                {isOpen && (
-                  <p>
-                                        {question.reponse}   </p>
-                )}
+                {isOpen && <p>{question.reponse} </p>}
               </div>
             </div>
           ))}
