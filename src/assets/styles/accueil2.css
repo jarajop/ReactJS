@@ -1,0 +1,14 @@
+:root{
+    --primary: #11355F;
+    --secondary : #EA4b74;
+}
+
+
+#home{
+    background-image: url('../images/home/banner_faq.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+
+}

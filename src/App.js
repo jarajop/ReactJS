@@ -18,6 +18,7 @@ import EtatForm from './componants/EtatForm';
 import TexteClickable from './componants/TexteClickable';
 import Etat4 from './componants/Etat4';
 import Form from './componants/Form';
+import Accueil2 from './componants/Accueil2';
 
 
 function App() {
@@ -42,6 +43,8 @@ function App() {
        <Route path='/login' element={ <Login />}/>
        <Route path='/footer' element={ <Footer/>}/>
        <Route path='/form' element={ <Form/>}/>
+       <Route path='/accueil2' element={ <Accueil2/>}/>
+
 
        
        </Routes>

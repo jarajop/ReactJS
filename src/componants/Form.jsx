@@ -22,7 +22,7 @@ function Form() {
         <input
           placeholder="Nom"
           type="text"
-         value={Pers.nom} 
+          value={Pers.nom}
           name="nom"
           onChange={(e) => setPers({ ...Pers, nom: e.target.value })} // e.target.value renvoyer la valeur actuelle du champ de saisie donc setName.  e.target.value
         />
@@ -33,7 +33,7 @@ function Form() {
           name="prenom"
           placeholder="Prénom"
           value={Pers.prenom}
-          onChange={(e) => setPers({ ...Pers, prenom: e.target.value })} 
+          onChange={(e) => setPers({ ...Pers, prenom: e.target.value })}
         />
         <br />
         <label> Age </label>{" "}

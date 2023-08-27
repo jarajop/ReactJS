@@ -5,6 +5,7 @@ import { Icon } from "@iconify/react";
 import { useState } from "react";
 
 function Accueil() {
+  // les 2 touches apres le P pr ls crochets et avc maj pr avoir ls accolades
   const Kaba = [
     {
       question: "question1",
