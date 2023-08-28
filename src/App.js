@@ -19,6 +19,10 @@ import TexteClickable from './componants/TexteClickable';
 import Etat4 from './componants/Etat4';
 import Form from './componants/Form';
 import Accueil2 from './componants/Accueil2';
+import Clés from './componants/Clés';
+import Accordéon from './componants/Accordéon';
+import Accordéon2 from './componants/Accordéon2';
+
 
 
 function App() {
@@ -30,7 +34,7 @@ function App() {
        <Jeu_image/> */}  
         
        <BrowserRouter> 
-       <Navbar/>
+       {/* <Navbar/> */}
 
 
        <Routes>
@@ -44,6 +48,13 @@ function App() {
        <Route path='/footer' element={ <Footer/>}/>
        <Route path='/form' element={ <Form/>}/>
        <Route path='/accueil2' element={ <Accueil2/>}/>
+       <Route path='/keys' element={ <Clés/>}/>
+       <Route path='/accordeon' element={ <Accordéon/>}/>
+       <Route path='/accordeon2' element={ <Accordéon2/>}/>
+
+
+
+
 
 
        

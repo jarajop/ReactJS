@@ -98,7 +98,7 @@ function Accueil() {
       <div className="container mt-5 mb-5">
         <div className="row  ">
           {Kaba.map((question, index) => (
-            <div className="col-6 " onClick={() => setIsOpen(!isOpen)}>
+            <div key={index} className="col-6 " onClick={() => setIsOpen(!isOpen)}>
               <div className="kestion ">
                 <div className="d-flex justify-content-between align-items-center w-100">
                   <p className="p-0 m-0">

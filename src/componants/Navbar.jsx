@@ -9,7 +9,7 @@ function Navbar() {
         {" "}
         {/* donc la le d-flex permet d'aligner ts les elements sur la mem ligne */}
         <img src={Subito} alt="" className="logo" />
-        <ul className="nav justify-content-end py-3 align-items-center ms-auto p-2">.  
+        <ul className="nav justify-content-end py-3 align-items-center ms-auto p-2">
           {" "}
           {/*cette classe permet de le mettre tt a fait a droite et py regle ls blem de marges et ms pr dire margin */}
           <li>
