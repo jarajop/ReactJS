@@ -4,6 +4,11 @@ height: 100vh;
 flex-shrink: 0;
 padding-top: 6%;;
 }
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Medium.ttf"); 
+  }
  .photo{
     background-image: url("../images/home/2776\ 1.png");
     width: 100%;
@@ -20,14 +25,17 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
  }
- .text2{
+  .text22{  
     color: #11355F;
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
- }
+}
+/* donc lá Kaba a expliké un truc kom koi kan ya 2 classes css ki ont le mem nom , React prend le style le plus haut niveau cad kan il execute il 
+commence par le fichier principal donc plus le fichier est imbriké plus il sera moins apte á etre executé et aussi les fichiers les plus proches de 
+App.js seront plus aptes á etre executés en premier */
  .user{
     background: rgba(217, 217, 217, 0.40); 
 border: 0;
@@ -52,7 +60,12 @@ background: #123764;
         border-radius: 30px;
 background: #11355F;
 width: 75%;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-decoration: none;
+color: #FFF;
+
     }
-
-
-

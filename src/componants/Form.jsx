@@ -24,14 +24,16 @@ function Form() {
           type="text"
           value={Pers.nom}
           name="nom"
+          required
           onChange={(e) => setPers({ ...Pers, nom: e.target.value })} // e.target.value renvoyer la valeur actuelle du champ de saisie donc setName.  e.target.value
         />
         <br />
         <label> Prénom </label>{" "}
         <input
-          type="text"
+          type="email"
           name="prenom"
           placeholder="Prénom"
+          required
           value={Pers.prenom}
           onChange={(e) => setPers({ ...Pers, prenom: e.target.value })}
         />
@@ -41,6 +43,7 @@ function Form() {
           type="number"
           placeholder="Age"
           name="age"
+          required
           value={Pers.age}
           onChange={(e) => setPers({ ...Pers, age: e.target.value })}
         />
@@ -50,6 +53,7 @@ function Form() {
           type="text"
           placeholder="Civilité"
           name="civilite"
+          required
           value={Pers.civilite}
           onChange={(e) => setPers({ ...Pers, civilite: e.target.value })}
         />

@@ -12,7 +12,12 @@ et mx permet de faire la combinaison de me et ms */
   height: 100px;
   object-fit: fill;
 }
-
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.ttf"); 
+}
+/* donc la on peut telecharger des polices personnalisées avc React en le telechargeant sur Google Fonts ,on  le décompresse et le met dans un dossier 
+dans le assets et on met cette synxtaxe tt a fait en haut pour l'utiliser */
 
 
 .mem {
@@ -27,6 +32,8 @@ et mx permet de faire la combinaison de me et ms */
   margin-bottom: 75px;
   text-decoration: none;
 }
+
+
 
 .mem.active {
   color: var(--secondary);
