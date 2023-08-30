@@ -22,6 +22,7 @@ import Accueil2 from './componants/Accueil2';
 import Clés from './componants/Clés';
 import Accordéon from './componants/Accordéon';
 import Accordéon2 from './componants/Accordéon2';
+import Authentification from './componants/Authentificaion';
 
 
 
@@ -34,7 +35,7 @@ function App() {
        <Jeu_image/> */}  
         
        <BrowserRouter> 
-       {/* <Navbar/> */}
+       <Navbar/>
 
 
        <Routes>
@@ -43,7 +44,7 @@ function App() {
        <Route path='/services' element={ <Services/>}/>
        <Route path='/voitures' element={ <Voitures />}/>
        <Route path='/confiance' element={ <Confiance />}/>
-       <Route path='/connexion' element={ <EtatForm/>}/>  {/* ici c la page connexion ki doit etre la  mai je fais ds tests avc les etats c pourkw*/}
+       <Route path='/connexion' element={ <Authentification/>}/>  {/* ici c la page connexion ki doit etre la  mai je fais ds tests avc les etats c pourkw*/}
        <Route path='/login' element={ <Login />}/>
        <Route path='/footer' element={ <Footer/>}/>
        <Route path='/form' element={ <Form/>}/>
