@@ -9,12 +9,23 @@ function Form() {
     age: "",
     civilite: "",
   });
+  const [empty, setIsempty] = useState(false); // initialisé á false par défaut
   // console.log(Pers.nom)
   // ici a début kom rien est encore saisi le usestate est initialié á vide avc ls doubles quotes
   //Chak champ est lié à l'état correspondant à l'aide de la propriété value et est mis à jour à chaque changement à l'aide de la fonction setPers.
 
   // Lorsk le user saisit des données dans les champs, les fonctions onChange sont déclenchées, et elles mettent à jour l'état du formulaire
   // en utilisant la fonction setPers et en répandant les valeurs existantes avec les nouvelles valeurs modifiées.
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (Pers.prenom === "" || Pers.nom === "") {
+      setIsempty(true);
+    }
+    if (Pers.nom && Pers.prenom) {
+      console.log("Prenom", Pers.prenom, "Nom", Pers.nom);
+    }
+  };
   return (
     <div className=" aide d-flex ">
       <form>
@@ -27,8 +38,12 @@ function Form() {
           required
           onChange={(e) => setPers({ ...Pers, nom: e.target.value })} // e.target.value renvoyer la valeur actuelle du champ de saisie donc setName.  e.target.value
         />
+        {empty && Pers.nom === "" ? (
+          <label> Le nom ne peut pas etre vide</label>
+        ) : (
+          ""
+        )}
         <br />
-        <label> Prénom </label>{" "}
         <input
           type="email"
           name="prenom"
@@ -37,6 +52,11 @@ function Form() {
           value={Pers.prenom}
           onChange={(e) => setPers({ ...Pers, prenom: e.target.value })}
         />
+        {empty && Pers.nom === "" ? (
+          <label> Le prénom ne peut pas etre vide</label>
+        ) : (
+          ""
+        )}
         <br />
         <label> Age </label>{" "}
         <input
@@ -58,7 +78,11 @@ function Form() {
           onChange={(e) => setPers({ ...Pers, civilite: e.target.value })}
         />
         <br />
-        <button className="bg-warning boutton3" type="submit">
+        <button
+          className="bg-warning boutton3"
+          type="submit"
+          onClick={(e) => handleSubmit(e)}
+        >
           Soumettre
         </button>
       </form>
