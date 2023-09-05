@@ -24,6 +24,7 @@ import Accordéon from './componants/Accordéon';
 import Accordéon2 from './componants/Accordéon2';
 import Authentification from './componants/Authentificaion';
 import Form2 from './componants/Form2';
+import Axios from './componants/Axios';
 
 
 
@@ -54,6 +55,8 @@ function App() {
        <Route path='/accordeon' element={ <Accordéon/>}/>
        <Route path='/accordeon2' element={ <Accordéon2/>}/>
        <Route path='/form2' element={ <Form2/>}/>
+       <Route path='/axios' element={ <Axios/>}/>
+
 
 
 
