@@ -1,6 +1,6 @@
-import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import "../assets/styles/style.css";
+import axios from "axios"
 
 function Form() {
   const [Pers, setPers] = useState({
@@ -16,6 +16,9 @@ function Form() {
 
   // Lorsk le user saisit des données dans les champs, les fonctions onChange sont déclenchées, et elles mettent à jour l'état du formulaire
   // en utilisant la fonction setPers et en répandant les valeurs existantes avec les nouvelles valeurs modifiées.
+  const handleInput = (e) => {
+    setPers({...empty,[e.target.name]: e.target.value})
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -25,10 +28,17 @@ function Form() {
     if (Pers.nom && Pers.prenom) {
       console.log("Prenom", Pers.prenom, "Nom", Pers.nom);
     }
+    axios
+      .post("https://api-dev.mysubito.net/api/v1/parking/car/rental/all",Pers)
+      .then(response => {
+        console.log(response)
+        // Handle response
+      })
   };
+  
   return (
     <div className=" aide d-flex ">
-      <form>
+      <form action="" id="login" method="post" onSubmit={handleSubmit}>
         <label className=""> Nom </label>{" "}
         <input
           placeholder="Nom"
@@ -99,3 +109,5 @@ function Form() {
 export default Form;
 //  donc lá Kaba a expliqué 1 truc du genre pr pouvoir controller le fonctionnement des formulaires on le fait avc les usestate cad pr pouvoir controller la valeurs des
 // champs du formulaire qui changent on met des ecouteurs  d'evenement tel que le Onchange maintnant le Event on le prefixe par e et kom la val actulle de setId ki change
+
+

@@ -28,7 +28,7 @@ dans le assets et on met cette synxtaxe tt a fait en haut pour l'utiliser */
   font-weight: 800;
   line-height: normal;
   margin-right: 40px;
-  margin-top: 70px;
+  margin-top: 7px;
   margin-bottom: 75px;
   text-decoration: none;
 }
@@ -78,7 +78,7 @@ dans le assets et on met cette synxtaxe tt a fait en haut pour l'utiliser */
    background-repeat: no-repeat; /* c pr dire k l'image ne doit po se repeter */
   background-size: cover;/*  et ca pr k l image prenne tte la taille du bg sans changer la qualité */
   width: 100%; 
-  height: 85vh;
+  height: 85vh; /* ca c pr pouvoir jouer sur la longueur */
   display: flex;
   justify-content: left;
   align-items: center;
@@ -117,7 +117,7 @@ font-weight: 400;
 line-height: normal;
 text-decoration: none;}
 
- .paragraph{
+ .npmgraph{
   color: #000;
 font-family: Inter;
 font-size: 24px;
@@ -163,7 +163,7 @@ box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
 
  }
  .alignement{
-  margin-left: 73px;
+  margin-left: 143px;
   justify-content:start;
   }
 

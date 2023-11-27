@@ -57,7 +57,7 @@ function Accueil() {
   return (
     <div>
       <div id="home">
-        <div className="alignement">
+        <div className="alignement bg-primary">
           <div className="paragraph">LE CONFORT AU MEILLEUR PRIX !</div>
           <div className="paragraph2">
             <p className="text-start">

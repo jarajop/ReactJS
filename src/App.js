@@ -22,7 +22,7 @@ import Accueil2 from './componants/Accueil2';
 import Clés from './componants/Clés';
 import Accordéon from './componants/Accordéon';
 import Accordéon2 from './componants/Accordéon2';
-import Authentification from './componants/Authentificaion';
+import Authentification from './componants/Authentification';
 import Form2 from './componants/Form2';
 import Axios from './componants/Axios';
 
@@ -56,6 +56,8 @@ function App() {
        <Route path='/accordeon2' element={ <Accordéon2/>}/>
        <Route path='/form2' element={ <Form2/>}/>
        <Route path='/axios' element={ <Axios/>}/>
+       <Route path='/connexion2' element={ <Form/>}/>
+
 
 
 
