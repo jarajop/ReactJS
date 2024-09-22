@@ -13,6 +13,6 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <App />
-    </BrowserRouter>
+    </BrowserRouter>   {/*browserrouter c'est pr taper des url au niveau du naviguateur*/ }
   </StrictMode>,
 )
