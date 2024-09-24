@@ -19,7 +19,7 @@ function Form2(){
         }
         if(firstName&&lastName) // Si les champs ne sont pas vides
         {
-        console.log("First Name: ",firstName,"\nLast Name: ",lastName) //maintenant dans la console
+        console.log("First Name: ",firstName,"\Last Name: ",lastName) //maintenant dans la console
         }
     }
     return(

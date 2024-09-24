@@ -25,6 +25,7 @@ import Accordéon2 from './componants/Accordéon2';
 import Authentification from './componants/Authentification';
 import Form2 from './componants/Form2';
 import Axios from './componants/Axios';
+import FormCopie from './componants/FormCopie';
 
 
 
@@ -50,6 +51,7 @@ function App() {
        <Route path='/login' element={ <Login />}/>
        <Route path='/footer' element={ <Footer/>}/>
        <Route path='/form' element={ <Form/>}/>
+       <Route path='/formcopie' element={ <FormCopie/>}/>
        <Route path='/accueil2' element={ <Accueil2/>}/>
        <Route path='/keys' element={ <Clés/>}/>
        <Route path='/accordeon' element={ <Accordéon/>}/>
@@ -57,6 +59,8 @@ function App() {
        <Route path='/form2' element={ <Form2/>}/>
        <Route path='/axios' element={ <Axios/>}/>
        <Route path='/connexion2' element={ <Form/>}/>
+       <Route path='/etat2' element={ <Etat2/>}/>
+
 
 
 
